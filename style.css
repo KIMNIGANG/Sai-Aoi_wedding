@@ -85,78 +85,26 @@ ul {
 }
 
 /* Home */
-#home {
-  height: 480px;
-  background: url(img/background.jpg) center/cover no-repeat;
-  padding: 40px;
-  padding-top: 320px;
-  text-align: center;
-  padding-bottom: 10px;
-}
 
-.home_container {
-  display: flex;
+#home {
+  background: url(img/_dsc0083_50675475096_o.jpg) center/cover no-repeat;
+  padding: 20px 20px;
+  height: 400px;
+  margin-bottom: 30px;
   align-items: center;
-  flex-direction: column;
-}
-.home_title {
-  color: whitesmoke;
-  margin-bottom: 0;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .home_description {
-  margin-top: 0px;
-  color: whitesmoke;
-}
-
-.home_contact {
-  background-color: var(--color-light-grey);
-  border: 2px white solid;
-  border-radius: var(--size-border-radius);
-  color: white;
-  font-size: var(--font-regular);
-}
-
-/* Description */
-
-#description {
-  background: url(img/flowerbackground.jpg) center/cover no-repeat;
-  padding: 20px 20px;
-  margin: 30px 0;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.wedding_icon {
-  margin: auto;
-  background-color: var(--color-yellow);
-  display: flex;
-  max-height: 230px;
-  max-width: 230px;
-  opacity: 0.97;
-  justify-content: center;
-  border-radius: 50%;
-  transition: all var(--animation-duration) ease-in;
-}
-
-.wedding_icon:hover {
-  transition: all var(--animation-duration) ease-in;
-  transform: scale(1.2);
-}
-
-.wedding_icon img {
-  width: 100%;
-}
-
-/* Couplepic */
-
-#couple_pic {
-  background-color: var(--color-yellow);
-  display: flex;
-  justify-content: space-around;
-}
-
-.couple_img {
   margin-top: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.home_description h2 {
+  font-family: "Dancing Script", cursive;
+  color: var(--color-white);
+  font-size: 50px;
 }
