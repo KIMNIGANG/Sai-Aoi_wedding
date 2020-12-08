@@ -86,12 +86,12 @@ ul {
 
 /* Home */
 #home {
-  height: 480px;
+  /* height: 480px;
   background: url(img/background.jpg) center/cover no-repeat;
   padding: 40px;
   padding-top: 320px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
 }
 
 .home_container {
