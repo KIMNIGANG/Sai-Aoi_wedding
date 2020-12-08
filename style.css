@@ -90,7 +90,7 @@ ul {
   background: url(img/_dsc0083_50675475096_o.jpg) center/cover no-repeat;
   padding: 20px 20px;
   height: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
@@ -107,4 +107,18 @@ ul {
   font-family: "Dancing Script", cursive;
   color: var(--color-white);
   font-size: 50px;
+}
+
+/* Map */
+#map_container {
+  background: url(img/flowerbackground.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+#map {
+  height: 80%;
+  width: 90%;
+  margin: auto;
 }

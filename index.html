@@ -8,22 +8,32 @@
     <meta name="author" content="BakaCouple" />
     <link rel="icon" type="image/png" href="img/logo.png" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/8ea954dc0f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- font,logo -->
+    <section class="font_logo">
+      <script
+        src="https://kit.fontawesome.com/8ea954dc0f.js"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </section>
     <script src="main.js" defer></script>
+    <!-- Map -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC159wno6sUj0GYk08Nga5k8JvRHl37zE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav id="navbar"></nav>
@@ -38,9 +48,10 @@
     </section>
 
     <!-- Map -->
-    <!-- <section id="map"> -->
-    <div id="map"></div>
-    <!-- </section> -->
+    <div id="map_container">
+      <h2>式場場所</h2>
+      <div id="map"></div>
+    </div>
 
     <!-- Gallery -->
     <section id="gallery"></section>
