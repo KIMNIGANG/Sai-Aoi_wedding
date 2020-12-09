@@ -1,15 +1,15 @@
 let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 25.101327, lng: 121.5455816 },
-    zoom: 15,
+    center: { lat: 25.1012056, lng: 121.5478001 },
+    zoom: 17,
   });
 
   marker = new google.maps.Marker({
     map: map,
     draggable: true,
     animation: google.maps.Animation.BOUNCE,
-    position: { lat: 25.101327, lng: 121.5455816 },
+    position: { lat: 25.1013056, lng: 121.5478001 },
   });
   marker.addeveListner("click", toggleBounce);
 }
