@@ -11,7 +11,6 @@ function initMap() {
     animation: google.maps.Animation.BOUNCE,
     position: { lat: 25.1013056, lng: 121.5478001 },
   });
-  marker.addeveListner("click", toggleBounce);
 }
 function toggleBounce() {
   if (marker.getAnimation() !== null) {

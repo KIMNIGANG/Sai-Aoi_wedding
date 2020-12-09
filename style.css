@@ -312,8 +312,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-      url("img/background_screen.jpg");
+    background-image: url("img/background_screen.jpg");
   }
 
   .title h1 {
