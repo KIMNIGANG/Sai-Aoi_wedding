@@ -137,7 +137,7 @@ ul {
 
 .slider {
   width: 100%;
-  height: 600px;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -162,7 +162,7 @@ ul {
 .navigation_manual {
   position: absolute;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: space-around;
 }
 
@@ -214,7 +214,7 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin-top: 565px;
+  margin-top: 62%;
 }
 
 .navigation_auto div {
