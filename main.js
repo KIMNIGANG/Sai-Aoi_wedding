@@ -20,7 +20,7 @@ function toggleBounce() {
   }
 }
 
-let counter = 1;
+let counter = 2;
 setInterval(function () {
   document.getElementById("radio" + counter).checked = true;
   counter++;
