@@ -313,6 +313,7 @@ ul {
 @media screen and (max-width: 768px) {
   .top {
     background-image: url("img/background_screen.jpg");
+    background-attachment: scroll;
   }
 
   .title h1 {
