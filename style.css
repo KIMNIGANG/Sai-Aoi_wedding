@@ -27,6 +27,7 @@
   --weight-regular: 400;
 
   /* Size */
+  --size-margin-bottom: 10px;
   --size-border-radius: 4px;
   --size-home-avatar: 250px;
 
@@ -84,38 +85,52 @@ ul {
   padding-left: 0;
 }
 
-/* Home */
+/* Background img */
 
-#home {
-  background: url(img/_dsc0083_50675475096_o.jpg) center/cover no-repeat;
-  padding: 20px 20px;
-  height: 400px;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 10px;
+.top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("img/background.jpg");
+  height: 700px;
+  margin-bottom: var(--size-margin-bottom);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.home_description {
-  margin-top: 30px;
+.main {
   display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 200px;
+  opacity: 0.9;
+}
+
+.title h1 {
   text-align: center;
-  justify-content: center;
+  color: #fff;
+  font-size: 130px;
+  font-family: "Brush Script MT", Arial, Helvetica, sans-serif;
 }
 
-.home_description h2 {
-  font-family: "Dancing Script", cursive;
-  color: var(--color-white);
-  font-size: 50px;
+.title2 {
+  text-align: center;
+  opacity: 0.9;
 }
 
+.title2 h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Brush Script MT", Arial, Helvetica, sans-serif;
+}
 /* Map */
 #map_container {
   background: url(img/flowerbackground.jpg) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
+  height: 2000px;
 }
 #map {
   height: 80%;
