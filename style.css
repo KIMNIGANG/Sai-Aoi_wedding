@@ -144,136 +144,119 @@ ul {
 }
 
 /* gallery */
-#gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slider {
-  width: 100%;
-  height: 80%;
-  overflow: hidden;
-}
-
-.slides {
-  width: 1000%;
-  display: flex;
-}
-
-.slides input {
+/* Hide the images by default */
+.mySlides {
   display: none;
 }
 
-.slide {
-  width: 10%;
-  transition: 2s;
-}
-
-.slide img {
-  width: 100%;
-}
-
-.navigation_manual {
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  width: 100%;
-  display: none;
-  justify-content: space-around;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.manual_btn {
-  border: 1px solid black;
-  padding: 7px;
-  border-radius: 50%;
-  pointer-events: none;
-  transition: 1s;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.manual_btn:hover {
-  background: var(--color-dark-grey);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -10%;
-}
-#radio3:checked ~ .first {
-  margin-left: -20%;
-}
-#radio4:checked ~ .first {
-  margin-left: -30%;
-}
-#radio5:checked ~ .first {
-  margin-left: -40%;
-}
-#radio6:checked ~ .first {
-  margin-left: -50%;
-}
-#radio7:checked ~ .first {
-  margin-left: -60%;
-}
-#radio8:checked ~ .first {
-  margin-left: -70%;
-}
-#radio9:checked ~ .first {
-  margin-left: -80%;
-}
-#radio10:checked ~ .first {
-  margin-left: -90%;
-}
-
-.navigation_auto {
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  display: flex;
+  bottom: 8px;
   width: 100%;
-  justify-content: space-around;
-  margin-top: 62%;
+  text-align: center;
 }
 
-.navigation_auto div {
-  border: 1px solid var(--color-dark-grey);
-  padding: 7px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
   border-radius: 50%;
-  transition: 1s;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#radio1:checked ~ .navigation_auto .auto-btn1 {
-  background: var(--color-dark-grey);
+.active,
+.dot:hover {
+  background-color: #717171;
 }
-#radio2:checked ~ .navigation_auto .auto-btn2 {
-  background: var(--color-dark-grey);
+
+.dot_btn {
+  margin-top: -25px;
+  margin-bottom: 10px;
 }
-#radio3:checked ~ .navigation_auto .auto-btn3 {
-  background: var(--color-dark-grey);
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-#radio4:checked ~ .navigation_auto .auto-btn4 {
-  background: var(--color-dark-grey);
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-#radio5:checked ~ .navigation_auto .auto-btn5 {
-  background: var(--color-dark-grey);
-}
-#radio6:checked ~ .navigation_auto .auto-btn6 {
-  background: var(--color-dark-grey);
-}
-#radio7:checked ~ .navigation_auto .auto-btn7 {
-  background: var(--color-dark-grey);
-}
-#radio8:checked ~ .navigation_auto .auto-btn8 {
-  background: var(--color-dark-grey);
-}
-#radio9:checked ~ .navigation_auto .auto-btn9 {
-  background: var(--color-dark-grey);
-}
-#radio10:checked ~ .navigation_auto .auto-btn10 {
-  background: var(--color-dark-grey);
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Map */
 #map_container {
+  z-index: 3;
   margin-top: -5px;
   background-image: url("img/map_background.jpg");
   display: flex;

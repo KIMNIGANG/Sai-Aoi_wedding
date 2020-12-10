@@ -67,78 +67,56 @@
 
     <!-- Gallery -->
     <section id="gallery">
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio_btn" id="radio1" />
-          <input type="radio" name="radio_btn" id="radio2" />
-          <input type="radio" name="radio_btn" id="radio3" />
-          <input type="radio" name="radio_btn" id="radio4" />
-          <input type="radio" name="radio_btn" id="radio5" />
-          <input type="radio" name="radio_btn" id="radio6" />
-          <input type="radio" name="radio_btn" id="radio7" />
-          <input type="radio" name="radio_btn" id="radio8" />
-          <input type="radio" name="radio_btn" id="radio9" />
-          <input type="radio" name="radio_btn" id="radio10" />
-
-          <div class="slide first">
-            <img src="img/slide1.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide2.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide3.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide4.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide5.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide6.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide7.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide8.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide9.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="img/slide10.jpg" alt="" />
-          </div>
-
-          <div class="navigation_auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-            <div class="auto-btn6"></div>
-            <div class="auto-btn7"></div>
-            <div class="auto-btn8"></div>
-            <div class="auto-btn9"></div>
-            <div class="auto-btn10"></div>
-          </div>
-        </div>
-        <div class="navigation_manual">
-          <label for="radio1" class="manual_btn"></label>
-          <label for="radio2" class="manual_btn"></label>
-          <label for="radio3" class="manual_btn"></label>
-          <label for="radio4" class="manual_btn"></label>
-          <label for="radio5" class="manual_btn"></label>
-          <label for="radio6" class="manual_btn"></label>
-          <label for="radio7" class="manual_btn"></label>
-          <label for="radio8" class="manual_btn"></label>
-          <label for="radio9" class="manual_btn"></label>
-          <label for="radio10" class="manual_btn"></label>
-        </div>
+<!-- Slideshow container -->
+    <div class="slideshow-container">
+      
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/slide1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
       </div>
-    </section>
 
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/slide2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/slide3.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/slide4.jpg" style="width:100%">
+        <div class="text">Caption Four</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/slide5.jpg" style="width:100%">
+        <div class="text">Caption Five</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="dot_btn" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    </section>
+    
     <!-- Map -->
     <div id="map_container">
       <h2>宴會場所</h2>
