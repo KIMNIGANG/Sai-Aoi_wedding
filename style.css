@@ -131,12 +131,12 @@ ul {
 }
 
 .minigame {
+  display: none;
   position: absolute;
   height: 150px;
   width: 150px;
-  background-color: yellow;
-  opacity: 0;
-  transform: translate(130px, -350px);
+  opacity: 1;
+  transform: translate(26vw, -350px);
   transition: opacity ease-in 100ms;
 }
 
@@ -338,11 +338,18 @@ ul {
   }
 
   .minigame {
+    display: block;
     position: absolute;
     height: 100px;
     width: 100px;
     background-color: yellow;
     opacity: 0;
-    transform: translate(290px, -410px);
+    transform: translate(53vw, -410px);
+  }
+  .minigame_img {
+    display: block;
+    width: 130px;
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
