@@ -61,3 +61,17 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// minigame
+
+const face = document.querySelector(".minigame");
+let minigame_counter = 0;
+
+face.addEventListener("click", () => {
+  minigame_counter++;
+  if (minigame_counter === 5) {
+    face.classList.add("active");
+  } else {
+    face.classList.remove("active");
+  }
+});

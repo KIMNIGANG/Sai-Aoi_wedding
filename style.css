@@ -130,6 +130,26 @@ ul {
   font-family: "Satisfy", cursive;
 }
 
+.minigame {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  opacity: 0;
+  transform: translate(130px, -350px);
+  transition: opacity ease-in 100ms;
+}
+
+.minigame.active {
+  transition: opacity ease-in 100ms;
+  opacity: 1;
+}
+
+.minigame_img {
+  transform: translate(-60px, -100px);
+  width: 300px;
+}
+
 /* Story */
 #story {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
@@ -315,5 +335,14 @@ ul {
 
   #map_container {
     height: 650px;
+  }
+
+  .minigame {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    opacity: 0;
+    transform: translate(290px, -410px);
   }
 }
