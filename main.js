@@ -1,34 +1,3 @@
-let map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 25.1012056, lng: 121.5478001 },
-    zoom: 17,
-  });
-
-  marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.BOUNCE,
-    position: { lat: 25.1013056, lng: 121.5478001 },
-  });
-}
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
-
-let counter = 2;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 10) {
-    counter = 1;
-  }
-}, 5000);
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -61,17 +30,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-// minigame
-
-const face = document.querySelector(".minigame");
-let minigame_counter = 0;
-
-face.addEventListener("click", () => {
-  minigame_counter++;
-  if (minigame_counter === 5) {
-    face.classList.add("active");
-  } else {
-    face.classList.remove("active");
-  }
-});

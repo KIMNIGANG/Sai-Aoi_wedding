@@ -130,26 +130,6 @@ ul {
   font-family: "Satisfy", cursive;
 }
 
-.minigame {
-  display: none;
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  opacity: 1;
-  transform: translate(26vw, -350px);
-  transition: opacity ease-in 100ms;
-}
-
-.minigame.active {
-  transition: opacity ease-in 100ms;
-  opacity: 1;
-}
-
-.minigame_img {
-  transform: translate(-60px, -100px);
-  width: 300px;
-}
-
 /* Story */
 #story {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
@@ -164,6 +144,22 @@ ul {
 .story_container h3,
 .story_container h4 {
   text-align: center;
+}
+
+.story_survey {
+  font-size: var(--font-medium);
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: var(--size-border-radius);
+  background-color: rgba(128, 128, 128, 0.856);
+  transition: background-color 300ms;
+}
+
+.story_survey:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* gallery */
@@ -297,11 +293,8 @@ ul {
   margin-top: 30px;
 }
 
-#map {
-  height: 80%;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 30px;
+.map {
+  max-height: 62%;
 }
 
 .gmap_link {
@@ -335,21 +328,5 @@ ul {
 
   #map_container {
     height: 650px;
-  }
-
-  .minigame {
-    display: block;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    opacity: 0;
-    transform: translate(53vw, -410px);
-  }
-  .minigame_img {
-    display: block;
-    width: 130px;
-    opacity: 1;
-    transform: translate(0, 0);
   }
 }
