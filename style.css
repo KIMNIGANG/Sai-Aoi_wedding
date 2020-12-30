@@ -331,4 +331,8 @@ ul {
   #map_container {
     height: 650px;
   }
+
+  .map {
+    max-height: 53%;
+  }
 }
