@@ -132,7 +132,7 @@ ul {
 
 /* Story */
 #story {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,12 +154,14 @@ ul {
   text-align: center;
   line-height: 70px;
   border-radius: var(--size-border-radius);
-  background-color: rgba(128, 128, 128, 0.856);
+  border: solid 3px rgb(49, 49, 49);
+  background-color: whitesmoke;
+  color: black;
   transition: background-color 300ms;
 }
 
 .story_survey:hover {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 /* gallery */
