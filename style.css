@@ -286,7 +286,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1000px;
+  height: auto;
   text-align: center;
   font-family: "Noto Serif TC", serif;
 }
@@ -296,7 +296,8 @@ ul {
 }
 
 .map {
-  max-height: 62%;
+  max-width: 90%;
+  margin-bottom: 30px;
 }
 
 .gmap_link {
@@ -326,13 +327,5 @@ ul {
   }
   .title2 h2 {
     font-size: 30px;
-  }
-
-  #map_container {
-    height: 650px;
-  }
-
-  .map {
-    max-height: 53%;
   }
 }
