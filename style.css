@@ -170,7 +170,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: auto;
 }
 
 .story_container h1,
@@ -185,7 +185,6 @@ ul {
   font-size: 15px;
   padding: 30px;
   list-style-type: circle;
-  margin-top: -50px;
 }
 
 .story_list li {
@@ -195,7 +194,7 @@ ul {
 /* gallery */
 
 #gallery {
-  margin-top: -110px;
+  margin-top: -45px;
 }
 
 /* Slideshow container */
