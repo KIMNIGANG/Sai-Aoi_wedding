@@ -42,8 +42,9 @@
 
 /* Typography */
 body {
+  max-width: 1200px;
   font-family: "Open Sans", sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   cursor: default;
   height: 100vh;
@@ -97,12 +98,10 @@ ul {
 /* Home */
 
 .top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
-    url("img/background.jpg");
-  height: 700px;
+  background-image: url("img/background.jpg");
+  height: 800px;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .main {
@@ -112,7 +111,7 @@ ul {
 
 .title {
   margin-top: 0px;
-  margin-bottom: 250px;
+  margin-bottom: 300px;
   opacity: 0.9;
 }
 
@@ -348,6 +347,7 @@ ul {
   .top {
     background-image: url("img/background_screen.jpg");
     background-attachment: scroll;
+    height: 700px;
   }
 
   .title {
